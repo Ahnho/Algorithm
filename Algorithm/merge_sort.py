@@ -16,7 +16,7 @@ def combine(left,right):
                 result.append(right[0])
                 right = right[1:]
             else :
-                result.append(left[0])
+                result.append(left[0]) 
                 left = left[1:]
         elif len(left) > 0 :
             result.append(left[0])
