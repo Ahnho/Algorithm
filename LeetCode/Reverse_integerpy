@@ -1,0 +1,23 @@
+###################################################################
+#  Reverse Integer
+# https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/880/
+###################################################################
+
+
+class Solution:
+    def reverse(self, x: int) -> int:
+        
+        if x == 0 or -2**31 > x or 2**31-1 <  x:
+            return 0
+        
+        answer = ""
+        x_re = [i for i in str(x)]
+        x_re.reverse()
+        if "-" in x_re  :
+            answer += x_re.pop()
+        for k in x_re:
+            answer += k
+        answer = int(answer)
+        if -2**31 > answer or 2**31-1 <  answer :
+            return 0
+        return answer
