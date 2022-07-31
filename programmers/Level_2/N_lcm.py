@@ -3,7 +3,7 @@
 ###########################################
 
 def gcd(n,m):
-    if n < m : n,m = m,n
+    if n < m : n,m = m,n 
     while m : 
         k = n % m 
         n,m = m,k
