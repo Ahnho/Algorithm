@@ -6,6 +6,6 @@ def solution(n):
     fibo = [0,1]
     if n == 1:
         return 1
-    for i in range(n-1):
+    for i in range(n-1): 
         fibo[0],fibo[1] = fibo[1],fibo[0]+fibo[1]
     return  fibo[1]%1234567
