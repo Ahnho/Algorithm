@@ -6,4 +6,4 @@ def solution(s):
     s_li = s.split(" ")
     for i,v in enumerate(s_li):
         s_li[i] = int(v)
-    return str(min(s_li)) +" " + str(max(s_li))
+    return str(min(s_li)) +" " + str(max(s_li)) 
