@@ -19,3 +19,4 @@ def solution(operations):
     if heap : 
         return [heapq.nlargest(1,heap)[0],heapq.nsmallest(1,heap)[0]]
     return [0,0]
+ 
