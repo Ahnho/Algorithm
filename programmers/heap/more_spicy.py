@@ -16,4 +16,4 @@ def solution(scoville, K):
         hq.heappush(scoville, a + b*2)
         answer += 1
         
-    return answer
+    return answer 
