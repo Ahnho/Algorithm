@@ -23,4 +23,4 @@ def solution(jobs):
         else : 
             now += 1
 
-    return time//len(jobs)
+    return time//len(jobs) 
