@@ -9,5 +9,5 @@ def solution(clothes):
     kind = set(ty) 
     for ch in kind:
         answer *= ty.count(ch)+1
-
+ 
     return answer-1
