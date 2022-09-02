@@ -18,4 +18,4 @@ def solution(bridge_length, weight, truck_weights):
             else:
                 tob.append(0)
     
-    return time
+    return time 
