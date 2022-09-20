@@ -38,7 +38,6 @@ void selectionSort(int a[], int n){
             temp = a[i];
             a[i] = a[jmin];
             a[jmin] = temp;
-            // swap(a[jmin], a[j]);
             countSwaps += 1;
         }
     }
