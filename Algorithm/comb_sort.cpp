@@ -1,5 +1,4 @@
 #include <iostream>
-// #include <cstdio>
 
 #define MAX_SIZE 1000
 void combSort(int a[], int n);
