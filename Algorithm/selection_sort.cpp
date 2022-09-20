@@ -1,5 +1,4 @@
 #include <iostream>
-// #include <cstdio>
 
 #define MAX_SIZE 1000
 void selectionSort(int a[], int n);
@@ -43,5 +42,5 @@ void selectionSort(int a[], int n){
     }
 
     printf("%d %d ", countCmpOps, countSwaps);
-    printf("\n");
+    printf("\n"); 
 }
