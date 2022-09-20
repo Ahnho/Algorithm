@@ -1,5 +1,4 @@
 #include <iostream>
-// #include <cstdio>
 
 #define MAX_SIZE 1000
 void insertionSort(int a[], int n);
@@ -26,7 +25,6 @@ void insertionSort(int a[], int n){
     int temp,i,j;
 
     // insertion sort 알고리즘 구현
-    // J.Bentley
     for(i = 1 ; i < n ; i++){
         for(j=i ; j > 0 && a[j-1] > a[j]; j--){
             temp = a[j];
@@ -38,15 +36,6 @@ void insertionSort(int a[], int n){
         if(j > 0)
             countCmpOps += 1;
     }
-    // Improvement insertion sort
-    // for(int i = 1 ; i < n ; i++){
-    //     countCmpOps += 1;
-    //     temp = a[i];
-    //     for(int j=i ; j > 0 && a[j-1] > a[j]; j--)
-    //         a[j] = a[j-1];
-    //     a[i] = temp;
-    //     countSwaps += 1;
-    // }
 
     printf("%d %d ", countCmpOps, countSwaps);
     printf("\n");
