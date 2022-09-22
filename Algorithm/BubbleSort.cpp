@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #define MAX_SIZE 1000
 void bubbleSort(int a[], int n);
 void bubbleSortImproved1(int a[], int n);
@@ -13,17 +12,14 @@ int main(){
     int numTestCases;
     int a[MAX_SIZE], b[MAX_SIZE];
 
-    // scanf("%d", &numTestCases);
     cin >> numTestCases;
 
     for (int i = 0; i < numTestCases; ++i){
     int num;
 
-    // scanf("%d", &num);
     cin >> num;
 
     for (int j = 0; j < num; j++)
-    // scanf("%d", &b[j]);
     cin >> b[j];
 
     copyArray(a, b, num);
@@ -33,7 +29,6 @@ int main(){
     copyArray(a, b, num);
     bubbleSortImproved2(a, num);
 
-    // printf("\n");
     cout << endl;
     }
 return 0;
@@ -62,12 +57,10 @@ void bubbleSort(int a[], int n){
             }
         }
     }
-    // cout << countCmpOps << " " << countSwaps;
     printf("%d %d ", countCmpOps, countSwaps);
 }
 
 
-// // 컴퓨터프로그래밍
 /* BubbleSort 함수 - Improved Version 1 */ 
 void bubbleSortImproved1(int a[], int n){
     int countCmpOps = 0; // 비교 연산자 실행 횟수 
@@ -88,7 +81,6 @@ void bubbleSortImproved1(int a[], int n){
             break;
         }
     }
-    // cout << countCmpOps << " " << countSwaps;
     printf("%d %d ", countCmpOps, countSwaps);
 
 }
@@ -112,7 +104,6 @@ void bubbleSortImproved2(int a[], int n){
         }
         lastSwappedPos = swappedPos;
     }
-    // cout << countCmpOps << " " << countSwaps;
     printf("%d %d ", countCmpOps, countSwaps);
 
 }
