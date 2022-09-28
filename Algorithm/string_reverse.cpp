@@ -14,7 +14,7 @@ int main(){
         int h = 0;
         cout << reverse(st,h, n);
         printf("\n");
-    }
+    } 
     return 0;
 }
 
