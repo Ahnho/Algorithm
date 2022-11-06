@@ -21,4 +21,4 @@ def solution(priorities, location):
             priorities.append(ftp)
         
     
-    return answer
+    return answer 
