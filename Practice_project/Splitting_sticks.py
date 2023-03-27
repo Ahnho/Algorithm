@@ -14,4 +14,4 @@ for _ in range(n):
                 stack[j] += 1
 
     print(bars)
-    
+     
